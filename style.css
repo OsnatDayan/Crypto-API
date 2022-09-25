@@ -1,0 +1,38 @@
+body{
+    background-image: url('./images/background.jpg');
+}
+
+h1{
+    color: white;
+}
+p{
+    font-size: large;  
+}
+.myButton{
+     margin-left: 180px;
+}
+.white{
+    color: white;
+    text-align: center;
+}
+td,tr{
+    color: white;
+    font-size: large; 
+   
+}
+table{
+     border: 2px,white,solid;
+     text-align: center;
+}
+.parallax{
+background-image: url('./images/parallax.jpg');
+min-height: 100px;
+min-width: 500px;
+background-attachment: fixed;
+background-position: left;
+background-repeat: no-repeat;
+background-size: cover;
+width: 85%;
+text-align: center;
+margin-left: 100px;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Second Project</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="parallax mb-5">
+        <h1>Cryptonite</h1>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <button id="home" type="submit" class="btn btn-primary navbar-brand">HOME</button>
+            <button id="Live Report" type="submit" class="btn btn-primary navbar-brand">Live Report</button>
+            <button id="about" type="submit" class="btn btn-primary navbar-brand">About</button>
+            <input id="search" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button id="searchNow" class="btn btn-outline-success" type="submit">Search</button>
+        </div>
+    </nav>
+    <div class="row" id="example"></div>
+    <div id='spinner' class="modal" tabindex="-1">
+        <div class="modal-dialog modal-sm modal-dialog-centered">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-body text-center">
+                    <div class="spinner-border text-danger" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModalToggle" data-bs-backdrop="static" data-bs-keyboard="false"
+        aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalToggleLabel">OOPPS...</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    You Chose More Then 5 Coins....
+                    Would You Like To Switcs?
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal"
+                        data-bs-dismiss="modal">Yes, I Want Replecment</button>
+                    <button class="btn btn-primary" onclick="back(event)" data-bs-dismiss="modal">NO, I Dont Want
+                        Replecment
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModalToggle2" data-bs-backdrop="static" data-bs-keyboard="false"
+        aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Remove The Coins That You Would Like To Replace</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div id="mBody" class="modal-body"></div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" onclick="back(event)" data-bs-toggle="modal"
+                        data-bs-dismiss="modal">FINISH</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+    <script src="cache.js"></script>
+
+</body>
+
+
+</html>
