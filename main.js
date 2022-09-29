@@ -105,7 +105,7 @@ function track(event) {//פונקציית מעקב
         elementClassas.push(x.classList[i]);
     }
     if (elementClassas.indexOf('turn') == -1) {
-        if (coinsToTRack.length < 3) {
+        if (coinsToTRack.length < 5) {
             coinsDataPick.push(index);
             coinsToTRack.push(coinsArr[index]);
             x.classList.add('turn');
